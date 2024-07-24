@@ -11,8 +11,6 @@ RUN useradd -o \
     --uid ${NB_UID} \
     jdh
 
-COPY notebooks ${HOME}
-
 RUN chown -R ${NB_UID} ${HOME}
 USER jdh
 
